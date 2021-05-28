@@ -1,12 +1,10 @@
 import express from 'express';
-import mongoose from 'mongoose'
 
 import Good from '../models/shopItem.js'
 
 const router = express.Router();
 
 export const getItems = async (req, res)=>{
-    
     try {
         const items = await Good.find()
 

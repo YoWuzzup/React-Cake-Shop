@@ -1,6 +1,5 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
@@ -13,7 +12,7 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 
-app.use('/', dataRoute);
+app.use('/shop', dataRoute);
 
 
 const PORT = process.env.PORT || 5000;
