@@ -6,9 +6,49 @@ const router = express.Router();
 
 export const getItems = async (req, res)=>{
     try {
-        const items = await Good.find()
+        let query
 
-        res.status(200).json(items)
+        const uiValues = {
+            filtering: {},
+            sorting: {}
+        }
+
+        const reqQuery = { ...req.query }
+        // const removeFields = ['default']
+        // removeFields.forEach(val => delete reqQuery[val])
+        // ^^ Idk for what, gotta google it
+
+        let queryStr = JSON.stringify(reqQuery);
+
+        queryStr = queryStr.replace(
+          /\b(gt|gte|lt|lte|in)\b/g,
+          (match) => `$${match}`
+        );
+
+        query = await Good.find(JSON.parse(queryStr))
+
+        if (req.query.sorting) {
+            const sortBy = req.query.sorting.split(',').join(' ');
+            if(sortBy === 'lowToHigh'){
+                query = await Good.find({
+                    price : { $gte: req.query.price.gte, $lte: req.query.price.lte }
+                    }).sort({ price: 1 });
+            } else if(sortBy === 'highToLow'){
+                query = await Good.find({
+                    price : { $gte: req.query.price.gte, $lte: req.query.price.lte }
+                    }).sort({ price: -1 });
+            } else if(sortBy === 'default'){
+                query = await Good.find({
+                    price : { $gte: req.query.price.gte, $lte: req.query.price.lte }
+                    });
+            }
+            // gotta do popularity && rating
+            
+        } else {
+            query = await Good.find(JSON.parse(queryStr));
+        }
+
+        res.status(200).json(query)
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
