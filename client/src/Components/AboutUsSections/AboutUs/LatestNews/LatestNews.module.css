@@ -1,0 +1,34 @@
+.latestNews{
+    background-color: rgb(250, 220, 220);
+    width: 100%;
+}
+
+.latestNews_wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.latestNews_title{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 120px 0 60px 0;
+}
+
+.latestNews_para{
+    margin-bottom: 10px;
+}
+
+.latestNews_posts{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 130px;
+}
+
+@media (max-width: 1000px){
+    .latestNews_posts{
+        flex-flow: row wrap;
+    }
+}

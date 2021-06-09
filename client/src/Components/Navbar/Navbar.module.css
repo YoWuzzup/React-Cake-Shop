@@ -1,0 +1,155 @@
+.Header{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    height: 96px;
+} 
+
+.Header_wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.navScrolling{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 50;
+}
+
+.Header_logo{
+    height: 80px;
+    width: 200px;
+}  
+
+.Header_navbar{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 70%;
+    justify-content: space-around;
+}  
+
+.Header_buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: fit-content;
+    flex-basis: 70%;
+    align-items: center;
+    position: relative;
+}  
+
+.Header_button{
+    display: flex;
+    align-items: center;
+    line-height: 88px;
+    height: 70px;
+    border-bottom: 5px solid transparent;
+    position: relative;
+}  
+
+.Header_button:hover{
+    border-bottom: 5px solid #ff4562;
+    color: #ff4562;
+}  
+
+.Header_socialMedia{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    color: #fff;
+    flex-basis: 12%;
+    height: 64px;
+    align-self: center;
+}
+
+.Header_icon:hover{
+    color: #ff4562;
+    cursor: pointer;
+}
+
+.Header_dropDownMenu{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header_menuLine{
+    width: 100%;
+}
+
+.Header_menuLine::before{
+    content: "";
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease-out;
+}
+
+.Header_dropDownMenu:hover .Header_menuLine:before{
+    border-bottom: 2px solid #ff4562;
+    margin: 4px 0;
+}
+
+.dropdown{
+    position: absolute;
+    width: 220px;
+    top: 77px;
+    left: 0;
+    box-shadow: 0 0 20px 1px black;
+}
+
+.DropdownItem{
+    width: 220px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    padding: 0 20px;
+    font-family: "Nunito";
+    text-align: left;
+    line-height: 64px;
+    font-weight: 400;
+    font-size: 15px;
+    border-left: 5px solid transparent;
+    transition: all ease .3s;
+    position: relative;
+}
+
+.DropdownItem:hover{
+    color: #ff4562;
+    border-left: 5px solid #ff4562;
+}
+
+.dropdown_subMenu{
+    position: absolute;
+    transform: translate(100%, -50px);
+    box-shadow: 0 0 20px 1px black;
+    z-index: 3;
+}
+
+
+
+@media(max-width: 1315px){
+    .Header_navbar{
+        display: none;
+    }
+
+    .Header_wrapper{
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+
+    .Header_dropDownMenu{
+        margin-right: 20px;
+    }
+}

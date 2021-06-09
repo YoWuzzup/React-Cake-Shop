@@ -1,0 +1,49 @@
+.HomeInnerPages_wrapper{
+    background-color: #f6f5dd;
+    padding-top: 120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeInnerPages_headerBlock{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.HomeInnerPages_name{
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.HomeInnerPages_commerce{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.HomeInnerPages_text{
+    font-size: 4em;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.HomeInnerPages_commerceImg{
+    width: 50%;
+}
+
+.HomeInnerPages_pagesImg{
+    width: 96%;
+    margin: 0 auto;
+}

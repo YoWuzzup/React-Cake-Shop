@@ -1,0 +1,64 @@
+.HomeDocumentation{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.blocks{
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 180px;
+    padding-bottom: 120px;
+}
+
+.HomeDocumentation_leftBlock{
+    background-color: rgba(246, 245, 221, 1);
+}
+
+.HomeDocumentation_rightBlock{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.HomeDocumentation_read{
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.HomeDocumentation_leaveEmail{
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.HomeDocumentation_para{
+    margin-bottom: 30px;
+    width: 65%;
+    font-size: 1.2em;
+}
+
+.HomeDocumentation_form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.HomeDocumentation_input{
+    width: 280px;
+    height: 50px;
+    margin-bottom: 120px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+}
+
+@media(max-width: 1000px){
+    .HomeDocumentation{
+        flex-flow: column;
+    }
+}

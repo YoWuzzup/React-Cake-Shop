@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'Satisfy', cursive;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper { 
+  width: 75%;
+  margin: 0 auto;
+}
+
+.satisfy{
+  font-family: 'Satisfy';
+  color: #ff4562;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+.sticked{
+  position: fixed !important;
+  background-color: #fff;
+  justify-content: center !important;
+  color: #000;
+  top: 0;
+  left: 0;
+  transition: all .5s ease ;
+}
+
+.slick-list{
+  height: auto;
+}
+
+
+/* HOME - HOME PAGES GRID */
+.TheGoldOne{
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.ThePastelOne{
+  grid-area: 1 / 5 / 2 / 7;
+}
+
+.TheChocolateOne{
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+.TheExoticOne{
+  grid-area: 2 / 2 / 3 / 4; 
+}
+
+.TheSinglePageOne{
+  grid-area: 2 / 6 / 3 / 8; 
+}
+
+
+/* HOME - INNER PAGES GRID */
+.HomeInnerPages_content{
+  width: 95%;
+  height: 100%;
+  margin: 0 auto 120px;
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-template-rows: 1.2fr 0.6fr 1.2fr;
+  gap: 2em 0em;
+  grid-template-areas:
+    "Productsportfolio Productsportfolio Productsportfolio Productsportfolio Productsportfolio Productsportfolio Productsportfolio . Singleproduct Singleproduct Singleproduct Singleproduct Singleproduct Singleproduct Singleproduct . Menu Menu Menu Menu Menu Menu Menu"
+    "AboutUs AboutUs AboutUs AboutUs AboutUs . Productcalculator Productcalculator Productcalculator Productcalculator Productcalculator . Testimonials Testimonials Testimonials Testimonials Testimonials . Contact Contact Contact Contact Contact"
+    "Icecreamproducts Icecreamproducts Icecreamproducts Icecreamproducts Icecreamproducts Icecreamproducts Icecreamproducts . Smoothieproducts Smoothieproducts Smoothieproducts Smoothieproducts Smoothieproducts Smoothieproducts Smoothieproducts . Specialoffer Specialoffer Specialoffer Specialoffer Specialoffer Specialoffer Specialoffer";
+}
+
+.AboutUs{
+  grid-area: AboutUs;
+}
+
+.Productcalculator{
+  grid-area: Productcalculator;
+}
+
+.Testimonials{
+  grid-area: Testimonials;
+}
+
+.Contact{
+  grid-area: Contact;
+}
+
+.Productsportfolio{
+  grid-area: Productsportfolio;
+}
+
+.Specialoffer{
+  grid-area: Specialoffer;
+}
+
+.Smoothieproducts{
+  grid-area: Smoothieproducts;
+}
+
+.Icecreamproducts{
+  grid-area: Icecreamproducts;
+}
+
+.Singleproduct{
+  grid-area: Singleproduct;
+}
+
+.Menu{
+  grid-area: Menu;
+}
+
+.scaleAnimated{
+  transition: transform .3s ease-in-out;
+  transform-origin: center center;
+}
+
+.scaleAnimated:hover{
+  transform: scale(1.1);
+}
+
+.rglrBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  background-color: #ff4562;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-family: "Nunito";
+  line-height: 1;
+  font-size: .9em;
+  font-weight: 400;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.rglrBtn:hover{
+  background-color: #fff;
+  color: #ff4562;
+  transition: all ease .3s;
+}
+
+@media( max-width: 1000px){
+  .HomeInnerPages_content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media( max-width: 600px){
+  .HomeInnerPages_content{
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .satisfy{
+    font-size: 2em;
+  }
+}

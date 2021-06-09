@@ -1,0 +1,72 @@
+.getInTouch{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.getInTouch_wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.getInTouch_header{
+    margin: 60px 0;
+    color: #fff;
+}
+
+.getInTouch_form{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.getInTouch_input{
+    flex-basis: 45%;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    height: 55px;
+    background-color: #78ccd4;
+    padding-left: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-family: "Nunito",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.getInTouch_input::placeholder{
+    color: #fff;
+}
+
+.getInTouch_message{
+    flex-basis: 96%;
+    height: 200px;
+    margin-bottom: 75px;
+    border-radius: 20px; 
+    padding-top: 20px;
+}
+
+.getInTouch_button{
+    align-self: center;
+    margin-bottom: 180px;
+}
+
+@media (max-width: 1130px){
+    .getInTouch_input, .getInTouch_message{
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width: 600px){
+    .getInTouch_form{
+        width: 100%;
+    }
+}

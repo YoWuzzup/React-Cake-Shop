@@ -1,0 +1,30 @@
+.previewSection{
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.previewSection_logo{
+    margin-top: 240px;
+    align-self: center;
+    transition: transform 500ms ease-in-out;
+    transform-origin: center center;
+}
+
+.previewSection_logo:hover{
+    transform: scale(.9);
+}
+
+.previewSection_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media( max-width: 600px) {
+    .previewSection_logo{
+        width: 100%;
+    }
+}

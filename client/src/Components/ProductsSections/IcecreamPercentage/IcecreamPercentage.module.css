@@ -1,0 +1,66 @@
+.icecream{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.icecream_info{
+    flex-basis: 50%;
+    margin: 120px 0 0;
+    display: flex;
+    flex-flow: column;
+    padding: 0 7% 0;
+}
+
+.icecream_slogan{
+    margin-bottom: 16px;
+}
+
+.icecream_para{
+    margin-bottom: 60px;
+}
+
+.icecream_percentage{
+    display: flex;
+    flex-flow: row nowrap;
+    color: #ff4562;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.icecream_percentageSingle{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.icecream_numbers{
+    font-size: 4em;
+    height: 1em;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.icecream_name{
+    font-size: 1.15rem;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1100px){
+    .icecream{
+        justify-content: center !important;
+    }
+
+    .icecream_percentage{
+        flex-flow: column !important;
+    }
+
+    .icecream_percentageSingle{
+        flex-basis: 45%;
+    }
+}

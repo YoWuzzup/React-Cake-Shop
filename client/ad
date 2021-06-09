@@ -1,0 +1,29 @@
+[33mcommit 998edfd0e3354da3a057779aa73553e8ac5e49a9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: YoWuzzup <YoWuzzup@live.com>
+Date:   Sun May 9 12:48:37 2021 +0200
+
+    before fixing navbar
+
+[33mcommit d63895091e65c2145a804100dc9b400e118c8008[m
+Author: YoWuzzup <YoWuzzup@live.com>
+Date:   Tue May 4 10:46:38 2021 +0200
+
+    before Contact block
+
+[33mcommit 8c310820e2db17dd0a7aee62f5b7daf7075f111c[m
+Author: YoWuzzup <YoWuzzup@live.com>
+Date:   Sat May 1 21:53:23 2021 +0200
+
+    before NewsContent Section
+
+[33mcommit aa405a65cc8dd9fc37e5b2c0beb794f2ab41cf4e[m
+Author: YoWuzzup <YoWuzzup@live.com>
+Date:   Sat May 1 14:19:29 2021 +0200
+
+    before google maps
+
+[33mcommit b08e8afd9fc893201d86f2fb45dda14b4f249242[m
+Author: YoWuzzup <YoWuzzup@live.com>
+Date:   Wed Feb 24 14:05:10 2021 +0700
+
+    Initialize project using Create React App

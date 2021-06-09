@@ -1,0 +1,72 @@
+.HomeTreats{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.HomeTreats_wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.HomeTreats_info{
+    display: flex;
+    flex-flow: column;
+    flex-basis: 35%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.HomeTreats_header{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.HomeTreats_slogan{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.HomeTreats_para{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.HomeTreats_iceCreamIcons{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 55%;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.HomeTreats_icon{
+    margin: 8px 15px;
+}
+
+.HomeTreats_icon:hover{
+    color: #35c1c0;
+    cursor: pointer;
+}
+
+@media(max-width: 1000px){
+    .HomeTreats_wrapper{
+        flex-flow: column;
+    }
+
+    .HomeTreats_iceCreamIcons{
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .HomeTreats_info{
+        text-align: center;
+    }
+}

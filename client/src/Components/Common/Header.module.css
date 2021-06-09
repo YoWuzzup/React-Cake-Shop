@@ -1,0 +1,35 @@
+.header{
+    min-height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.header_name{
+    padding: 180px 0 0 0;
+    font-size: 4em;
+    line-height: 1.2;
+    font-weight: 400;
+    color: inherit;
+}
+
+.header_text{
+    margin: 20px 0 0 0;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.2em;
+    color: inherit;
+    width: 600px;
+    text-align: left;
+}
+
+.header_wrapper{
+    padding: 0 0 120px 0;
+}
+
+@media (max-width: 600px) {
+    .header_text{
+        width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+.ProductsNewOffer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 'left left right';
+}
+
+.ProductsNewOffer_info{
+    grid-area: left;
+    background-color: #5cc4c4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.ProductsNewOffer_carousel{
+    grid-area: right;
+    min-width: 0;
+    max-height: 0;
+    height: fit-content;
+}
+
+.ProductsNewOffer_infoInner{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ProductsNewOffer_header{
+    margin: 200px 0 15px;
+    font-size: 1.1rem;
+}
+
+.ProductsNewOffer_slogan{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ProductsNewOffer_para{
+    margin-bottom: 120px;
+}
+
+.singleSlide{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newOfferDots{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.newOfferDots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newOfferDots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.newOfferDots li button:hover,
+.newOfferDots li button:focus {
+    outline: none;
+}
+
+.newOfferDots li button:hover:before,
+.newOfferDots li button:focus:before {
+    opacity: 1;
+    background-color: #ff4562;
+}
+
+.newOfferDots li button:before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    content: "";
+    text-align: center;
+
+    border: 3px solid #ff4562;
+    border-radius: 50%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+.newOfferDots li .slick-active button:before {
+    opacity: 0.75;
+    background-color: #ff4562;
+}
+
+@media( max-width: 1000px){
+    .ProductsNewOffer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'left';
+    }
+
+    .ProductsNewOffer_carousel{
+        display: none;
+    }
+}
+
+@media( min-width: 1001px) {
+    .ProductsNewOffer_carousel{
+        height: 633px;
+    }
+
+    .singleSlide{
+        height: 700px;
+    }
+}

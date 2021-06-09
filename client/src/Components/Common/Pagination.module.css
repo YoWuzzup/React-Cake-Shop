@@ -1,0 +1,42 @@
+.pagination{
+    width: 68%;
+    margin: 0 auto 105px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.page, .arrows{
+    width: 30px;
+    height: 30px;
+    margin: 0 6px 0;
+    display: flex;
+    background-color: none;
+    color: #ff4562;
+    border: 1px solid #ff4562;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.page:hover{
+    border: 15px solid #ff4562;
+    color: #fff;
+}
+
+.active, .arrows{
+    background-color: #ff4562;
+    color: #fff;
+}
+
+.leftArrow::after{
+    content: ' \2190';
+}
+
+.rightArrow::after{
+    content: ' \2192';
+}

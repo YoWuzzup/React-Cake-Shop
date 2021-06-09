@@ -1,0 +1,29 @@
+.filter_info {
+    margin-bottom: 40px;
+}
+
+.input-range__label--value .input-range__label-container {
+    display: none;
+}
+
+.input-range__label--min .input-range__label-container,
+.input-range__label--max .input-range__label-container{
+    display: none;
+}
+
+.input-range__slider {
+    background: #ff4562;
+    border: none;
+}
+
+.input-range__track {
+    background: rgba(0, 0, 0, .3);
+}
+  
+.input-range__track--active {
+    background: #ff4562;
+}
+
+.input-range{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,16 @@
+.fullWidthSlider{
+    height: 310px;
+}
+
+.fullWidthSlider_singleSlide{
+    width: 310px;
+    height: 310px;
+    outline: none;
+    overflow: hidden;
+}
+
+.fullWidthSlider_singleImage{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}

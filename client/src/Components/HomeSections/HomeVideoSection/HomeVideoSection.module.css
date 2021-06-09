@@ -1,0 +1,78 @@
+.VideoSection{
+    background-color: #35c1c0;
+    width: 100%;
+}
+
+.VideoSection_wrapper{
+    display: flex;
+    flex-flow: column;
+}
+
+.VideoSection_header{
+    margin-top: 120px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.VideoSection_logo{
+    width: 250px;
+    height: 180px;
+    margin-bottom: 30px;
+}
+
+.VideoSection_slogan{
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.VideoSection_about{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 120px;
+}
+
+.VideoSection_video{
+    width: 580px;
+    height: 334px;
+    flex-basis: 45%;
+}
+
+.VideoSection_info{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: #fff;
+    flex-basis: 45%;
+}
+
+.VideoSection_info_header{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.VideoSection_info_firstPara, .VideoSection_info_secondPara{
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.VideoSection_info_firstPara{
+    margin-bottom: 15px;
+}
+
+@media(max-width: 1000px){
+    .VideoSection_about{
+        flex-flow: column;
+    }
+
+    .VideoSection_video{
+        width: 95%;
+    }
+}

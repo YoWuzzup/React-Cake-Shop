@@ -1,0 +1,88 @@
+.HomeLoadingSpeed{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.HomeLoadingSpeed_wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;    
+    width: 95%;
+    margin: 0 auto;
+    height: 620px;
+}
+
+.HomeLoadingSpeed_raspberry{
+    align-self: flex-start;
+    width: 220px;
+}
+
+.HomeLoadingSpeed_gif{
+    width: 490px;
+    height: 430px;
+    align-self: flex-end;
+}
+
+.HomeLoadingSpeed_content{
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+    width: 475px;
+    margin: 0 10px;
+}
+
+.HomeLoadingSpeed_header{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.HomeLoadingSpeed_slogan{
+    color: inherit;
+    margin: 0 0 20px 0;
+}
+
+.HomeLoadingSpeed_para{
+    text-align: left;
+}
+
+@media(max-width: 1150px){
+    .HomeLoadingSpeed_gif{
+        width: 50%;
+    }
+
+    .HomeLoadingSpeed_raspberry{
+        width: 20%;
+    }
+}
+
+@media(max-width: 1000px){
+    .HomeLoadingSpeed_gif{
+        display: none;
+    }
+
+    .HomeLoadingSpeed_wrapper{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .HomeLoadingSpeed_raspberry{
+        align-self: center;
+    }
+
+    .HomeLoadingSpeed_content{
+        font-size: 1.15em;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .HomeLoadingSpeed_raspberry{
+        width: 40%;
+    }
+}

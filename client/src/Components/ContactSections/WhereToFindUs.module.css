@@ -1,0 +1,59 @@
+.whereToFindUs{
+    width: 100%;
+    background-color: #ffe4e4;
+}
+
+.whereToFindUs_wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.whereToFindUs_location, .whereToFindUs_call{
+    flex-basis: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.whereToFindUs_lollipop{
+    width: 450px;
+    height: auto;
+}
+
+.whereToFindUs_header{
+    margin-bottom: 18px;
+    font-size: 4em;
+}
+
+.whereToFindUs_text{
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    width: 65%;
+    text-align: center;
+}
+
+.whereToFindUs_btn{
+    border-radius: 50px 0 50px 50px;
+    margin-bottom: 30px;
+}
+
+.whereToFindUs_btnCall{
+    width: 240px;
+    height: 58px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+@media (max-width: 1000px) {
+    .whereToFindUs_wrapper{
+        flex-flow: column;
+    }
+}

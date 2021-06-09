@@ -1,0 +1,101 @@
+.vitamin{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.vitamin_stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    '. .'
+    '. .';
+}
+
+.vitamin_singleItemStat{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+}
+
+.vitamin_percentage{
+    font-size: 3.3em;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: "Satisfy";
+    margin-top: 30px;
+}
+
+.vitamin_singleVi{
+    font-family: "Nunito";
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.vitamin_singleItemStat:nth-child(2){
+    border-left: none;
+}
+
+.vitamin_singleItemStat:nth-child(4){
+    border-left: none;
+    border-top: none;
+}
+
+.vitamin_singleItemStat:nth-child(3){
+    border-top: none;
+}
+
+.vitamin_img{
+    width: 370px;
+    margin: 0 80px;
+}
+
+.vitamin_about{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    color: #fff;    
+    flex-basis: 25%;
+}
+
+.vitamin_name{
+    color: inherit;
+    margin-bottom: 30px;
+}
+
+.vitamin_para{
+    margin-bottom: 60px;
+    font-family: "Nunito",Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+@media(max-width: 1000px){
+    .vitamin{
+        flex-flow: column nowrap !important;
+    }
+
+    .vitamin_about{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media( max-width: 600px){
+    .vitamin_img{
+        max-width: 100%;
+        height: auto;
+    }
+}
