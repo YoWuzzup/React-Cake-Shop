@@ -1,5 +1,4 @@
 import express from 'express';
-
 import Good from '../models/shopItem.js'
 
 const router = express.Router();
@@ -41,8 +40,15 @@ export const getItems = async (req, res)=>{
                 query = await Good.find({
                     price : { $gte: req.query.price.gte, $lte: req.query.price.lte }
                     });
+            } else if(sortBy === 'popularity'){
+                query = await Good.find({
+                    price : { $gte: req.query.price.gte, $lte: req.query.price.lte }
+                    }).sort({ clicks: 1 });
+            } else if(sortBy === 'latest'){
+                query = await Good.find({
+                    price : { $gte: req.query.price.gte, $lte: req.query.price.lte }
+                    }).sort({ date: 1 });
             }
-            // gotta do popularity && rating
             
         } else {
             query = await Good.find(JSON.parse(queryStr));
