@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+    height: 80vh;
+    gap: 50px;
+}
+
+.container > *{
+    width: 580px;
+    height: 665px;
+}
+
+.container_arrayImgs{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.container_imgInArray{
+    width: 420px;
+    height: auto;
+}
+
+.container_imgInArray:nth-child(1),
+.container_imgInArray:nth-child(3){
+    align-self: flex-end;
+}

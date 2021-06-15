@@ -10,6 +10,7 @@ export { default as HomeTreats } from "./HomeSections/HomeTreats/HomeTreats";
 export { default as HomeVideoSection } from "./HomeSections/HomeVideoSection/HomeVideoSection";
 export { default as HomeDocumentation } from "./HomeSections/HomeDocumentation/HomeDocumentation";
 export { default as HomeFooter } from "./HomeSections/HomeFooter/HomeFooter";
+export { default as GoldLinks } from "./HomeSections/TheGoldOne/GoldLinks";
 
 // products page
 export { default as ProductsPreviewSection } from "./ProductsSections/ProductsPreviewSection/ProductsPreviewSection";
@@ -48,3 +49,5 @@ export { default as ShopMap } from "./Common/ShopMap";
 export { default as Footer } from "./Common/Footer";
 export { default as Pagination } from "./Common/Pagination";
 export { default as BigAssSlider } from "./Common/BigAssSlider";
+export { default as TriangleInfo } from "./Common/TriangleInfo";
+export { default as TriangleAndPic } from "./Common/TriangleAndPic";

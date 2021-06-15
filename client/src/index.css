@@ -43,6 +43,17 @@ code {
   height: auto;
 }
 
+/* bigAssSlider arrowstyles */
+.bigAssSlider .slick-next::before,
+.bigAssSlider .slick-prev::before{
+  content: none;
+}
+
+.bigAssSlider .slick-next:hover,
+.bigAssSlider .slick-prev:hover{
+  border-color: #ff4562 !important;
+}
+
 
 /* HOME - HOME PAGES GRID */
 .TheGoldOne{

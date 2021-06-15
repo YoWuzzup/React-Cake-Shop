@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon --exec babel-node index.js",
-    "frontend": "cd .. && npm start --prefix frontend",
-    "start": "concurrently \"npm run server\" \"npm run frontend\""
+    "client": "cd .. && npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "YoWuzzup",
   "license": "ISC",

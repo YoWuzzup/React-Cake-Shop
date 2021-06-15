@@ -7,6 +7,7 @@
 .slider_imageContainer{
     width: 100%;
     height: auto;
+    font-family: "Nunito",Arial,sans-serif;
 }
 
 .slider_bgImg{
@@ -70,4 +71,58 @@
 
 .allCookies:hover{
     transform: rotate(180deg);
+}
+
+.slider_macaroons{
+    color: #fff;
+    font-size: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    
+    .slider_subInfo, .slider_macaroons{
+        font-size: 6em;
+    }
+
+    .slider_secondColumn{
+        display: none;
+    }
+
+    .columns{
+        flex-basis: 30%;
+    }
+
+    .slider_thirdColumn{
+        justify-content: center;
+    }
+    
+    .slider_content{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .slider_subInfo, .slider_macaroons{
+        font-size: 3em;
+    }
+
+    .columns{
+        flex-basis: 40%;
+    }
+
+    .allCookies{
+        width: 100%;
+        height: auto;
+    }
+
+    .slider_thirdColumn{
+        align-self: center;
+    }
 }
