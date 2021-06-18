@@ -14,10 +14,6 @@ app.use(cors());
 
 app.use('/shop', dataRoute);
 
-app.use('/', (req,res)=>{
-  res.send(`This is my Cake Shop's backend`)
-})
-
 const PORT = process.env.PORT || 5000;
 const uri = `mongodb+srv://${process.env.DBLOGIN}:${process.env.DBPASSWORD}@cluster1.dqgcx.mongodb.net/OhlalaCakeShop`;
 

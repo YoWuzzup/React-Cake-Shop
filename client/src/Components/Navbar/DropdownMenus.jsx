@@ -13,7 +13,7 @@ export default function DropdownMenus({ btn, handleSubMenuHover, subMenuBtnHover
             <div key={`${i}_${index} ${itemLink}`}>
                 <DropdownItem item={i.lable} handleSubMenuHover={handleSubMenuHover} itemLink={itemLink} />
 
-                {i.subMenu && 
+                {/* {i.subMenu && 
                     <CSSTransition
                             timeout={500}
                             // in={ subMenuBtnHover >= 0  }
@@ -24,7 +24,7 @@ export default function DropdownMenus({ btn, handleSubMenuHover, subMenuBtnHover
                                 <DropdownMenus btn={i.subMenu} handleSubMenuHover={handleSubMenuHover} subMenuBtnHover={subMenuBtnHover} />
                             </div>
                     </CSSTransition>
-                }
+                } */}
             </div>
         )})}
     </div>
